@@ -1,0 +1,4 @@
+dwozniak_openshift:
+    resource: "@DwozniakOpenshiftBundle/Resources/config/routing.yml"
+    prefix:   /
+

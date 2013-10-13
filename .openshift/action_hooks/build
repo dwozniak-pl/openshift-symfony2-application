@@ -1,0 +1,14 @@
+#!/bin/bash
+
+pushd ${OPENSHIFT_REPO_DIR} > /dev/null
+echo Downloading composer...
+curl -sS https://getcomposer.org/installer | php
+php composer.phar self-update
+echo Building app...
+php composer.phar install -o -n
+echo Building app finished
+echo Generating assets...
+php app/console assets:install --env=prod php
+php app/console assetic:dump --env=prod php
+echo Generating assets finished
+popd > /dev/null

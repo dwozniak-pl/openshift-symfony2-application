@@ -1,0 +1,3 @@
+dwozniak_openshift_homepage:
+    pattern:  /
+    defaults: { _controller: DwozniakOpenshiftBundle:Default:index }

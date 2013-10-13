@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symfony2 on Openshift</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+
+    {% stylesheets '@DwozniakOpenshiftBundle/Resources/public/css/*' filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}" media="screen" />
+    {% endstylesheets %}
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    {% stylesheets '@DwozniakOpenshiftBundle/Resources/public/css/ie/*' filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}" media="screen" />
+    {% endstylesheets %}
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="header">
+
+        <h3 class="text-muted">Symfony2 on OpenShift</h3>
+    </div>
+
+    <div class="jumbotron">
+        <h1>Hello from OpenShift</h1>
+        <p class="lead">It is a Symfony2 project hosted on OpenShift.</p>
+    </div>
+
+    <div class="footer">
+        <p>Created by <a href="http://www.dwozniak.pl">dwozniak.pl</a> using <a href="http://symfony.com/">Symfony2</a> and <a href="http://getbootstrap.com/">Twitter Bootstrap</a>  </p>
+    </div>
+
+</div> <!-- /container -->
+
+</body>
+</html>
