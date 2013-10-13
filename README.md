@@ -1,4 +1,4 @@
 openshift-symfony2-application
 ==============================
 
-PHP3 Symfony2 application in OpenShift
+Symfony2 application in OpenShift
